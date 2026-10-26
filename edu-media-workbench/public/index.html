@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh" data-page-node-id="X2bb2QZWBOm1plzNcT9M33">
+<head data-page-node-id="lBLHagnj6cCGj67sgJekAT">
+<meta charset="UTF-8" data-page-node-id="QmdFpeqDvBtVnNRCZAhqDn">
+<meta name="viewport" content="width=device-width, initial-scale=1" data-page-node-id="HXJfPi6YBsXzGzAHLRce5L">
+<title>教培新媒体本地工作台</title>
+<link rel="icon" href="/logo.png" type="image/png" data-page-node-id="YU4ZKPHYXQSViLiqS6Zs4S">
+<link rel="stylesheet" href="/style.css" data-page-node-id="Ol7aEMByCR2PsSECG7GG0T">
+<!-- 标题字体：思源宋体（Noto Serif SC），CDN 加载；本机已装「思源宋体」则直接回退 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-serif-sc/400.css" data-page-node-id="1aD76TnfkOt3x0YUOhQdzi">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-serif-sc/700.css" data-page-node-id="OHRF8f0DyCoRrsqMNgFPwF">
+</head>
+<body data-page-node-id="ZH1258TbG8STPoadqjwsjx">
+
+<!-- ============ SVG 图标精灵（深蓝小图标，无 emoji） ============ -->
+<svg style="display:none" aria-hidden="true" data-page-node-id="918QRekKWwfXZl7xhv8Svb">
+  <symbol id="i-calendar" viewBox="0 0 24 24" data-page-node-id="JoHMwPxDXX4fECzvz5706g"><path d="M17 12h-5v5h5v-5zm-9 0H5v5h3v-5zm0-6h3V1H8v5zm9 0h3V1h-3v5zM21 4H5c-1.1 0-2 .9-2 2v15c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM20 21H5V9h15v12z" data-page-node-id="64A6PJKXEHIptnXcgqTwqB"/></symbol>
+  <symbol id="i-news" viewBox="0 0 24 24" data-page-node-id="E5bzugr1cvyumctEJvxCwT"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 6H7v2h10V9zm-4 4H7v2h6v-2zm4-8H7v2h10V5z" data-page-node-id="FhocDVMBi2vpHMadDZv8hg"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24" data-page-node-id="Vqkt5AwirYexDgAUdgRGEi"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" data-page-node-id="C1lEY4QKoyLwlegfb16M1l"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24" data-page-node-id="cRERYSdoXA7r7TejgkBqzQ"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5zm0 2.3L18.5 7 12 10.7 5.5 7 12 4.3zM5 8.7l6 3.5v7.3l-6-3.3V8.7zm14 0v7.3l-6 3.3v-7.3l6-3.5z" data-page-node-id="9GTqDeVhCvO4unR8oqe60W"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24" data-page-node-id="CP2xiJkXp7B7iq4TJr3Qgr"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z" data-page-node-id="ufm5NAxQ2uy65Ka4qbi3wt"/></symbol>
+  <symbol id="i-history" viewBox="0 0 24 24" data-page-node-id="hvv6uiB1fyYVCA3h1G7sR5"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z" data-page-node-id="6XAlGbfovKUVoGFHuKqH83"/></symbol>
+  <symbol id="i-ban" viewBox="0 0 24 24" data-page-node-id="IxwCQZx358A2qbhdE8FDSC"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8z" data-page-node-id="Xz9SL524J5RovRHLlas8Hn"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" data-page-node-id="4NPc5vlvn5b2BBAoUC4CNC"><path d="M5 9.2h3V19H5zM10.6 5h3v14h-3zm5.6 8H19v6h-2.8z" data-page-node-id="hjMUks9hEbvbXNBhxOP664"/></symbol>
+  <symbol id="i-save" viewBox="0 0 24 24" data-page-node-id="xJXNDR0aQJRf52DDF9aUE8"><path d="M17 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z" data-page-node-id="ZXNcom7MNhoWH4LPBUltz0"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24" data-page-node-id="Kl5tBNo2SLxEmR8EJhbN9y"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" data-page-node-id="cVDXsZSdj1KbyoasdgUTgD"/></symbol>
+  <symbol id="i-clipboard" viewBox="0 0 24 24" data-page-node-id="1SxvscTRzWXxHtt9oCL3QD"><path d="M19 2h-4.18C14.4.84 13.3 0 12 0c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm7 18H5V4h2v3h10V4h2v16z" data-page-node-id="rE6FNKaCW7uqTFBeczEywt"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24" data-page-node-id="m6doi27SEG15W11dCA8D5Z"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" data-page-node-id="molKxiLsL9srJt5FtWHzpO"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24" data-page-node-id="Eo3Sbw1AZaDa8rvKc1BdSD"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" data-page-node-id="mr3uOjWXn4WonAMw76jOIY"/></symbol>
+  <symbol id="i-warning" viewBox="0 0 24 24" data-page-node-id="lNgAOD54BhGUB3H3AWfXjn"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" data-page-node-id="HOeipcisLEW52cmktHMZcP"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" data-page-node-id="3LwFVv8l6zyvgk8MTs1I0Y"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" data-page-node-id="QBf2xayzUfim4DnQZvYcWf"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24" data-page-node-id="KzEsvX7xCEwAg9JE09gJ0V"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z" data-page-node-id="V7S4qvw0oG6TacWGapEdHs"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24" data-page-node-id="TXRqeuUDKwdnrzQfGsfobC"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A6 6 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z" data-page-node-id="WmEhCuT0NHqxFGMZm7Q2X5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24" data-page-node-id="IGVn9oug522Nt1rbhudkUk"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" data-page-node-id="2h3b1aGbaSsFmJdpC8RRdW"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" data-page-node-id="54cOcuPpFBwa6xC2freoRL"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" data-page-node-id="EDWmNRwKFbQAosDKUoKrPt"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24" data-page-node-id="svxqtbfHHSFb0EvrqFFB4D"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z" data-page-node-id="oYkZ0GDXkYhbWyCkbGx9Xj"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24" data-page-node-id="nfHEg5BXvhmsjCgInCsUDT"><path d="M5 20h14v-2H5v2zM5 9h4v6h6V9h4l-7-7-7 7z" data-page-node-id="ifbAzeCdpAuHYMElY4IJX2"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24" data-page-node-id="ECbh7fNfCf5RlkdEPy73v0"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z" data-page-node-id="v4ROOAkVDuWElPH3TDbkzA"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24" data-page-node-id="DQrLCIC8BLnhFUKhCxexK4"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z" data-page-node-id="MTmezOpJwQMAbrQ5t0EhEt"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" data-page-node-id="OUDJFdB1SB3DiU2vlH7T4P"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" data-page-node-id="2bnGRZueakFvtW9y21khnZ"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" data-page-node-id="NyHL7VMYJ6aF2yXFa1XNlc"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" data-page-node-id="KcD69GgtT8xE72BKbmJxMI"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24" data-page-node-id="X9gjl6TzWH3vZOPHmaRAFT"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" data-page-node-id="NdOsXwixK2xGdrPn8ymjmc"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24" data-page-node-id="4T58RFHQnW0AvLuy7JQJok"><path d="M12 15.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4zM9 2L7.2 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.2L15 2H9zm3 15a5 5 0 1 1 0-10 5 5 0 0 1 0 10z" data-page-node-id="sDTtbfMz15HHohEsGYsmTS"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" data-page-node-id="lYcs42mbEwDUgPhzVA9k28"><path d="M8 5v14l11-7z" data-page-node-id="x1C360pKgG06UZbUXf5Aee"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24" data-page-node-id="hppAzJb1epgD4qINwAxyBU"><path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-13c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" data-page-node-id="YXx47iclPcm8CxBE0iW57P"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24" data-page-node-id="YxhvLyTRnbVgsdtNpVsMzE"><path d="M19.14 12.94c.04-.3.06-.61.06-.94s-.02-.64-.07-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.61-.22l-2.39.96a7.3 7.3 0 0 0-1.62-.94l-.36-2.54a.5.5 0 0 0-.5-.42h-3.84a.5.5 0 0 0-.5.42l-.36 2.54c-.59.24-1.13.56-1.62.94l-2.39-.96a.5.5 0 0 0-.61.22L2.74 8.84a.5.5 0 0 0 .12.64l2.03 1.58c-.05.3-.07.62-.07.94s.02.64.07.94l-2.03 1.58a.5.5 0 0 0-.12.64l1.92 3.32c.13.22.39.31.61.22l2.39-.96c.49.38 1.03.7 1.62.94l.36 2.54c.05.24.25.42.5.42h3.84c.25 0 .45-.18.5-.42l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.09.48 0 .61-.22l1.92-3.32a.5.5 0 0 0-.12-.64l-2.03-1.58zM12 15.5A3.5 3.5 0 1 1 12 8.5a3.5 3.5 0 0 1 0 7z" data-page-node-id="KXhAAeHqZDr7DrUtGyVLYb"/></symbol>
+</svg>
+
+<header data-page-node-id="KWANh6jQ3ejp5MDGyoY8yM">
+  <h1 data-page-node-id="Yo9mz6o5uiAxcsDHbRkvJp"><img src="/logo.png" alt="新东方" class="logo-img" data-page-node-id="pI6o0mMzpQhK9kN68nT3he"> 教培新媒体工作台</h1>
+  <div class="lights" data-page-node-id="SnZiGroUGwCnakIwkjDjvN">
+    <div class="light" id="light-platform" data-page-node-id="QxmHGMsCpoRfAtYJtHICOs"><span class="dot" id="lt-platform" data-page-node-id="DFHhS9OyBFGv8RxtiYHS9d"></span>聚合平台</div>
+    <div id="btn-config-header" class="light" data-tip="配置 API · 未配置" style="margin-left:8px" title="配置大模型 API / 聚合平台 / 发布设置" data-page-node-id="g3gWDX6A2FYNivv4XZ1wdE"><span class="dot bad" id="lt-config" data-page-node-id="LsbNQ6WO3mEQbeeROQSfos"></span>配置 API</div>
+    <div class="light" id="light-xhs" data-page-node-id="RWQofoqg9C6GRJOZqSllwQ"><span class="dot" id="lt-xhs" data-page-node-id="sJm7QVySITZuSThivTTmjx"></span>小红书<span id="xhs-account" data-page-node-id="pajekCCPv9A9F3b0AO6aBM"></span></div>
+  </div>
+</header>
+
+<div class="layout" data-page-node-id="kyNkC0BW9APzq8hLvwarMj">
+  <!-- 左侧菜单 -->
+  <nav class="sidebar" data-page-node-id="mD9YtXoA56WyJhxv3O93FO">
+    <div class="nav-group" data-page-node-id="Y7dBFpKoCf4SDMWKmBfgFt"><span class="nav-group-title" data-page-node-id="s3OldDDoXGZYiv5HTS799i">灵感</span></div>
+    <a class="nav-item active" data-view="calendar" data-page-node-id="En6T2uuQ5ND0E13PliTWKh"><svg class="ico" data-page-node-id="KHSOGSnSO5byVMMIqutupA"><use href="#i-calendar" data-page-node-id="nvrPXU0DmXAvYHtuOLOMKY"/></svg>选题日历</a>
+    <a class="nav-item" data-view="news" data-page-node-id="xnDUyaIaPHXD7YHtjJ1rPy"><svg class="ico" data-page-node-id="HC9VcYBbR1xz2PXyJcccIB"><use href="#i-news" data-page-node-id="UJZ7FH2MQ0VhRHCZQqaw6t"/></svg>资讯与知识库</a>
+
+    <div class="nav-group" data-page-node-id="xJFBLJr7IDEoLJdcfgHzkD"><span class="nav-group-title" data-page-node-id="PfBmxAJwKj9ADlp4DQFsSo">创作</span></div>
+    <a class="nav-item" data-view="plan" data-page-node-id="GnOiN7jLFfW3NtV5egyzqv"><svg class="ico" data-page-node-id="a8EdeUbwPwmBmX4q89hAeQ"><use href="#i-edit" data-page-node-id="kZOmytjmJ4U3MRSgqVi5AY"/></svg>选题与文案</a>
+    <a class="nav-item" data-view="material" data-page-node-id="td6GkmPMzblG0eG2BNiRfW"><svg class="ico" data-page-node-id="1T4khZZ311QlcnvYjMvnIB"><use href="#i-box" data-page-node-id="OdIdlHdcOS2A0g0fqLt1F8"/></svg>白皮书物料</a>
+
+    <div class="nav-group" data-page-node-id="st2OqzQcJove2UApPwSyv1"><span class="nav-group-title" data-page-node-id="2NVYYnZXslCipkVrNrfob2">发布</span></div>
+    <a class="nav-item" data-view="publish" data-page-node-id="c4cZ8VoIcT0Z3rosuOjNDR"><svg class="ico" data-page-node-id="DTXjzHKHO6B401o9wtNHbo"><use href="#i-send" data-page-node-id="ZjNyAY4qEDuXym6SZNEUpd"/></svg>发布到小红书</a>
+    <a class="nav-item" data-view="history" data-page-node-id="q0TgXViY98HQ8Uvbg4vTqD"><svg class="ico" data-page-node-id="wQxmCUpkvqhgYjmtrWENU6"><use href="#i-history" data-page-node-id="Vx6sAXeEsG1eM9OHPqwF7f"/></svg>发布历史</a>
+
+    <div class="nav-group" data-page-node-id="HwDWQWiazwxQLGDdcuEMga"><span class="nav-group-title" data-page-node-id="vvMzS57QkoGUolpjgmTW98">合规</span></div>
+    <a class="nav-item" data-view="banned" data-page-node-id="XglH32vdGhLumqXVjac8Bz"><svg class="ico" data-page-node-id="m9lBBoTkBnYXnCbSBqTcr6"><use href="#i-ban" data-page-node-id="HOkdNs1JMYhcrFnnbUhNHs"/></svg>违禁词清单</a>
+    <a class="nav-item" data-view="violation" data-page-node-id="7vETXRaXPTxpA3uaFO0SKI"><svg class="ico" data-page-node-id="RWU82EeHBozsV7b2RAg0UF"><use href="#i-chart" data-page-node-id="MlsIjHAPWxeAeLyLtT9Egt"/></svg>违规日志</a>
+
+    <div class="nav-group" data-page-node-id="9TKptIPIxmFY8WpjBs3HXp"><span class="nav-group-title" data-page-node-id="DON6HGXxmkhcroKIcs39tQ">设置</span></div>
+    <a class="nav-item" data-view="config" data-page-node-id="PA21S8IQDXnEKlEfiB2gXg"><svg class="ico" data-page-node-id="5zLF6pHMCaE7GjqtgJay6e"><use href="#i-gear" data-page-node-id="gy9Xq1rAyOVu1Ywcdgznpb"/></svg>系统配置</a>
+  </nav>
+
+  <!-- 主内容区 -->
+  <main data-page-node-id="3JR6irtD84NG18UaHVFiKX">
+    <!-- 视图：选题日历 -->
+    <section class="view active" id="view-calendar" data-page-node-id="oUTIRW3ai9CfOJktHLZ3Aa">
+      <div class="card" data-page-node-id="uANVDFRX8twLIoOMVb9yZJ">
+        <h2 data-page-node-id="5juDNO7rWRWV20KpJ2K4nt"><svg class="ico" data-page-node-id="e1xY0m0t0AdRSj1VCbjaoK"><use href="#i-calendar" data-page-node-id="74Uv3pnwC2Rt7G69xI2ABV"/></svg>选题日历 <span class="badge" data-page-node-id="NqS3Uzto4pYFYUGv21bLf2">记忆</span></h2>
+        <div class="cal-nav" data-page-node-id="p2V5WvRnhtOrJgNEIJk8Wm">
+          <button class="ghost" id="cal-prev" data-page-node-id="4SlE5A2iRFGN0sfHBkg8nW">‹ 上月</button>
+          <span class="cal-label" id="cal-label" data-page-node-id="tZGgzl56aiifIHqoOzOw0s"></span>
+          <button class="ghost" id="cal-next" data-page-node-id="LgZnia4b4x568v5np1QDHH">下月 ›</button>
+          <button class="ghost" id="cal-today" data-page-node-id="OyKqryxwXGyzlqP35jjTxD">今天</button>
+        </div>
+        <div class="calendar" id="calendar" data-page-node-id="JUoNMFslsyF0KasxCRfNWD"></div>
+        <p class="muted" data-page-node-id="yfz3igSO4sDtEdBFSNAB7q">绿色圆圈为今天（北京时间）；有实心圆点的日期表示当天已有选题（已确认排期 / 已发布 / 已存草稿），把鼠标放在日期上看标题和状态。在「内容策划 · 生成未来话题」里点「确认排期」即可写入这里。</p>
+      </div>
+    </section>
+
+    <!-- 视图：内容策划 -->
+    <section class="view" id="view-plan" data-page-node-id="W0CaPAq8JG62Lt926AD5V0">
+      <div class="card" data-page-node-id="Khkc07w41PxGFhleBNuxII">
+        <h2 data-page-node-id="rPkNAbgcDm4X1m3BWhxiTr"><svg class="ico" data-page-node-id="w16cL95ggjs9K0qdZgXATZ"><use href="#i-target" data-page-node-id="9CEDwgfNVw9XfRhAqLrCoa"/></svg>生成未来话题 <span class="badge" data-page-node-id="1kizMovpKif6nBLln1xpJo">专家+知识库</span></h2>
+        <div class="row" data-page-node-id="RiMGYDiE3VhXU3qdDU06pj">
+          <label data-page-node-id="Q9w1em0lghlnpN1FXdtTBD">业务线</label>
+          <select id="business" data-page-node-id="0bPRyAVJ6wnnAEmBDiKG03">
+            <option data-page-node-id="0AaR0gDtNgzG0mZdpfSbS4">素养智学/小学</option>
+            <option data-page-node-id="eNeglTFEW0xhz51uXrW4yf">智慧学习/初中</option>
+            <option data-page-node-id="jJCK1spsqE09ww4Xbs9D5t">高中一对一</option>
+            <option data-page-node-id="lWo3acOtmaQ7v4DnrJSQ6l">高中班课</option>
+          </select>
+        </div>
+        <div class="row" data-page-node-id="1qlBhLuZbSQKR6tC8mdriP">
+          <label data-page-node-id="uR8iiY1n0zj2tTVH0kDLHP">校区</label>
+          <select id="campus" data-page-node-id="3vCfcj5GC9CHJaohA0HA1F"></select>
+          <button class="ghost" id="btn-campus-add" data-page-node-id="71F6LC8fdnplyps9SCC5xQ">＋新增校区</button>
+          <button class="ghost" id="btn-campus-del" data-page-node-id="hIPb5UAO3CC7Q8wN2saU6M">删除所选</button>
+        </div>
+        <div class="row" data-page-node-id="95cbhdMvNmiyNWCuJ6MZz0">
+          <label data-page-node-id="ba7efEBkis1ZRTGtgCNOzg">天数</label>
+          <select id="days" data-page-node-id="6XPv01oAQt4tSSGsPzPflT">
+            <option value="3" data-page-node-id="3KeeXwh9xCaCz5ss5rAbxP">3 天</option>
+            <option value="5" data-page-node-id="LepUit8OLJ1VP6RtBtdm6g">5 天</option>
+            <option value="7" selected data-page-node-id="GSr8HmEeHDiTDSiunU1EbH">7 天</option>
+            <option value="14" data-page-node-id="sTtLTF1lzVfd6we4HIHcFa">14 天</option>
+          </select>
+          <button id="btn-topics" data-page-node-id="RYg6cwKax8puSP6CncyNwG">生成选题</button>
+          <button class="ghost" id="btn-edit-topic" data-page-node-id="RNbKqas3doAyeKbq1vapTX">编辑提示词</button>
+        </div>
+        <div id="campus-add-area" class="sub-panel" style="display:none" data-page-node-id="flNqhJ0zJBxNq6pOxmLprm">
+          <div class="row" data-page-node-id="baMvFmGJFV8LAL7NESD8s1">
+            <label data-page-node-id="xcOhNBwtiQuUFEG6dc6mPv">校区名</label><input id="campus-name" placeholder="如：保定校区" data-page-node-id="gFN2g5GLFMv9drvL80x23f">
+          </div>
+          <div class="row" data-page-node-id="AtgUPA7nwpC01ZlDPP1SUT">
+            <label data-page-node-id="zX6FwMQL1b2EMP8sj0hCHz">关键词</label>
+            <div id="campus-tags" class="tag-box" data-page-node-id="izTQkHEnb9LoOAOVt5K3Sq"></div>
+          </div>
+          <div class="row" data-page-node-id="eAH1gAx9MV59eJcZDPu11V">
+            <input id="campus-kw-input" placeholder="输入一个关键词后回车添加，如：保定" data-page-node-id="X7Ha0Eg36h5LMA8etPXyGF">
+            <button id="btn-campus-save" data-page-node-id="9KOSAb6X9Ek446wlkSORPL">保存校区</button>
+          </div>
+          <p class="muted" data-page-node-id="BPWvBYm59uTOupF8BoBg20">多个关键词以标签形式添加，检索时按「命中任一即取」合并（OR 逻辑），无需同时出现。</p>
+        </div>
+        <div id="topic-stat" class="campus-stat" data-page-node-id="2EigmsYVlVQ8G8305pODcl"></div>
+        <textarea id="topic-prompt" style="display:none; min-height:120px"></textarea>
+        <div class="result" id="topic-result" data-page-node-id="Rp6TdeOi7IxYqD4RQjeggK">生成结果将显示在这里…</div>
+      </div>
+      <div class="card" data-page-node-id="hr9c4JBvqzu9LUJrHkr3Z0">
+        <h2 data-page-node-id="p3RG3n5IkMBGU5tThdjphk"><svg class="ico" data-page-node-id="dx0N4Pr320nn8IJbCngsJA"><use href="#i-edit" data-page-node-id="G0m6e5HS47t1NmuqGSGmA9"/></svg>文案生成 <span class="badge" data-page-node-id="ObE8bf7KCC74Pex2UEW7qa">xiaohongshu-write</span></h2>
+        <div class="row" data-page-node-id="hKIzGQbZ5xdCEMPnMwACsd">
+          <label data-page-node-id="l5LNJmEJQIsN7HeAPFNGjX">选题</label><input id="c-topic" placeholder="如：北京中考体育改革，家长最该知道什么" data-page-node-id="POYSt72jeyUc5yDlHKaQ36">
+        </div>
+        <div class="row" data-page-node-id="GsaTokNwkkcGb0909yM2XR">
+          <label data-page-node-id="gzzyGEiiRDg9fsFSntlIQ3">角度</label><input id="c-angle" placeholder="如：避坑指南" data-page-node-id="xdOORnwfE4k4EkP6SVTKwO">
+          <label data-page-node-id="O6U8YXMnzbCZGPSYB2XSPW">人群</label><input id="c-aud" placeholder="如：小升初家长" data-page-node-id="Cy7a5zQSEfWD5mUW63CT0h">
+        </div>
+        <div class="row" data-page-node-id="qwlcMcxCmeBVLum8Hi1jtT">
+          <label data-page-node-id="0eEFYm7BrkzjdiOTDvV5Zs">政策钩子</label><input id="c-hook" placeholder="如：《北京市义务教育体育与健康考核方案》" data-page-node-id="TkN7HT7d7PHi6WzmKmAc6E">
+          <button id="btn-copy" data-page-node-id="Gwvd1TIHEgYYQaNqNx2l5n">生成文案</button>
+          <button class="ghost" id="btn-edit-copy" data-page-node-id="myxCZXXlJpxaMqL5SdhaFj">编辑提示词</button>
+        </div>
+        <textarea id="copy-prompt" style="display:none; min-height:120px"></textarea>
+        <textarea id="copy-result" class="ta" placeholder="生成结果将显示在这里（可编辑、可复制）"></textarea>
+        <div id="copy-stat" class="campus-stat" data-page-node-id="kRvCPlAgx1LeRADUVyB0T3"></div>
+        <div class="row" style="margin-top:10px" data-page-node-id="TSissFvjZEPgt1LCxmDUfq">
+          <button id="btn-check-copy" data-page-node-id="o8WbyOEHetM2UjImf439m6"><svg class="ico" data-page-node-id="mOvviMo1UXjLtZu5lLSVFV"><use href="#i-search" data-page-node-id="6uSLzEDscSmcSVJIDTQbhH"/></svg>合规检查</button>
+          <button id="btn-sync-publish" data-page-node-id="PzeAE33KfP0aXKac4MHBJ8"><svg class="ico" data-page-node-id="xvK3TfoczwA3Ai2s2pSxuf"><use href="#i-link" data-page-node-id="beR2NlGglDBRYIcXeHzzfI"/></svg>同步到发布栏</button>
+          <span class="muted" data-page-node-id="z47jKbjp6icf4XAHZQhzs0">生成后点「合规检查」：字数 + 违禁词一键扫描</span>
+        </div>
+        <div id="copy-check" class="check-box" style="display:none" data-page-node-id="CSFEJd1dETb5MEVpA5ImqX"></div>
+      </div>
+    </section>
+
+    <!-- 视图：资讯收集 -->
+<section class="view" id="view-news" data-page-node-id="GweGoMMIDkY6ViGekoAkgW">
+      <div class="card" data-page-node-id="uaf68XxlT1SIeJGewdYa1u">
+        <h2 data-page-node-id="GPT9p0f8ImZl83ZTb5OB3M"><svg class="ico" data-page-node-id="DnMvBuSSq2h2GLGcTbhxbF"><use href="#i-news" data-page-node-id="RTFCsS2IPKFPI0RmFdFjR2"/></svg>聚合平台资讯 <span class="badge" data-page-node-id="XO24ZtifabGA1tjWGwZyeP">实时</span></h2>
+        <div class="row" data-page-node-id="BveNo3Z0wK30WxbdCGyzeo">
+          <button id="btn-news" data-page-node-id="xoe2qMdw41Eu4mJapdyF1k">刷新资讯</button>
+          <span class="muted" data-page-node-id="Z1gURTqmIripkB12pS8QLi">来自 edu-info-platform /api/articles</span>
+        </div>
+        <div class="list" id="news-list" data-page-node-id="9zg7ifmOSArcrrW3Hvo5XY"><div class="muted" style="padding:12px" data-page-node-id="29RzecyFQL2ayQS9ZcYJsv">点击刷新</div></div>
+      </div>
+
+      <!-- 知识库：并入资讯收集，作为「内部素材」与上方「外部资讯」并列 -->
+
+      <!-- 知识库：并入资讯收集，作为「内部素材」与上方「外部资讯」并列 -->
+      <div class="card" data-page-node-id="sxBrsp6tileLAR7xdNqWEq">
+        <h2 data-page-node-id="JCQULCqHJso5p2AX0YiccT"><svg class="ico" data-page-node-id="ZTIiWIbQEgdSlVy7kU12zd"><use href="#i-book" data-page-node-id="91RsnuvUvOMn9UPFzq6k47"/></svg>我的知识库 <span class="badge" data-page-node-id="xyi7J5LqyTM17gzhMufuPG">本地·零依赖</span></h2>
+        <p class="muted" data-page-node-id="pkrFaG8NaIrGHUalFugoCY">上传 txt / md / pdf / docx 参考资料，生成物料与选题时自动作为上下文注入。可按「合集」分类管理，文件保存在本地。</p>
+
+        <!-- 合集栏 -->
+        <div class="kb-cols" data-page-node-id="YVenqXh3DCes5VzvkOOFzs">
+          <div class="kb-col-chips" id="kb-cols" data-page-node-id="sNZ4VZJ5yXpA0NKyTOK1gB"></div>
+          <button id="btn-new-col" class="ghost kb-new-col" data-page-node-id="RQ5YtxTJvK1Hsfi3NoHvhN"><svg class="ico" data-page-node-id="wWc6qb5X1LINHpxLJF9Gg4"><use href="#i-plus" data-page-node-id="rW7h5NH4cEmjJrfPPnAP4o"/></svg>新建合集</button>
+        </div>
+
+        <div class="row" data-page-node-id="hUtXeSMdews67eA4cKsZza">
+          <input type="file" id="kb-upload" multiple accept=".txt,.md,.pdf,.docx,.doc,.xlsx,.xls,.csv" data-page-node-id="JH4IZ9mvxSKNg4aB7gV9IY">
+          <button id="btn-kb-upload" style="margin-left:8px" data-page-node-id="BC7HrddGkP4Djm4B2pgV6G"><svg class="ico" data-page-node-id="flahbnIy2RyykqT8FWpuVV"><use href="#i-upload" data-page-node-id="TUHZCV3eRhQYMtribClUjD"/></svg>上传到当前合集</button>
+        </div>
+        <p class="muted" id="kb-stats" style="margin-top:6px" data-page-node-id="3X0vysJlyzlZ04Hzn7m9yL">共 0 篇</p>
+        <div id="kb-batch-bar" class="kb-batch-bar" style="display:none" data-page-node-id="6aKciZBxuRVJIzQNtdrZNg">
+          <span data-page-node-id="4ZuPuLePAPnph67Sm87YTD"></span>
+          <button class="ghost" onclick="batchDelKB()" style="font-size:12px;padding:3px 12px;background:#fef2f2;color:#dc2626;border:1px solid #fecaca;border-radius:8px" data-page-node-id="QSjK3Fy2ejlRxSTby2ZqN4"><svg class="ico err" data-page-node-id="1jJK6cCwF8nEYWhgs2wxU4"><use href="#i-trash" data-page-node-id="KkVt5pNp4ex5BraHEohkwH"/></svg>删除所选</button>
+          <button class="ghost" onclick="reparseAllFailed()" style="font-size:12px;padding:3px 12px;background:#fffbeb;color:#d97706;border:1px solid #fde68a;border-radius:8px" data-page-node-id="19iYWQPfs9AdxsBwgLkZK1"><svg class="ico warn" data-page-node-id="wVnLHb1ISyD5giorfZWyQK"><use href="#i-refresh" data-page-node-id="nJVtaABbPxroTVMBuazcuO"/></svg>重试全部失败</button>
+        </div>
+        <ul class="mat-list" id="kb-list" data-page-node-id="YHs2CwIizNjBzzMxNSEUa3"></ul>
+        <p class="muted" id="kb-empty" style="margin-top:6px" data-page-node-id="tqMa6Y0RLGsmZpRFl7W4dP">当前合集暂无文件，点击上方按钮上传</p>
+      </div>
+    </section>
+
+    <!-- 视图：发布到小红书（环境提醒在最上，封面素材置于正文下、标签上） -->
+    <section class="view" id="view-publish" data-page-node-id="cZFqC60kLZTcanPcBVVonQ">
+      <!-- 发布环境 / 风控护栏：置于最上方，先提醒配置浏览器 -->
+      <div class="card" data-page-node-id="mghCF4okCq2FBkhqFEThE6">
+        <h2 data-page-node-id="EiK2iTJxcHxJNeIH0U1Sz2"><svg class="ico" data-page-node-id="E1EEaGBLGp09gBPTOlK7h8"><use href="#i-shield" data-page-node-id="OhaVi9gpPU1UNZYbiVQ5H6"/></svg>发布环境 / 风控护栏 <span class="badge" data-page-node-id="tVEpTN1b0lbV7xXiPZfnnl">反检测</span></h2>
+        <div class="row env-status" data-page-node-id="Xoeog8ZHiDA5V6PYkXv7MX">
+          <span data-page-node-id="QLYPiNATt0VJoUlxCROJyE">发布专用浏览器：</span>
+          <span id="cdp-status-text" class="muted" data-page-node-id="K3S0vnMWDhZ8d5wHCB1fbX">检查中…</span>
+        </div>
+        <div class="row" data-page-node-id="ZhxbBKSyrVc8YMyLquFhVl">
+          <button id="btn-cdp-launch" class="ghost" data-page-node-id="4O9T2pHnLHJeWqw2VQRkcu"><svg class="ico" data-page-node-id="FeVpnnhZ5IBKwzxRl9Np7i"><use href="#i-play" data-page-node-id="w5jCWn6NaePZjDEten5z6c"/></svg>打开发布专用浏览器</button>
+          <span class="muted" id="cdp-launch-hint" data-page-node-id="FyXAavQcXPLXBBldRmyz09">未连接时点这里。首次需在小红书登录一次，以后就能直接复用登录状态。</span>
+        </div>
+        <hr style="margin:12px 0;border:none;border-top:1px solid var(--line-soft)" data-page-node-id="vCJCKTRxj0zuAZkK743DaG">
+        <div class="row" data-page-node-id="e35Lcu2uHcuwOmRfV00yTb"><label data-page-node-id="3YFeXDIpebmzGOJldstfGK">两次自动发布最少间隔(分钟)</label>
+          <input id="guard-interval" type="number" min="1" max="1440" style="width:90px" data-page-node-id="Z8KtCk9TGRliTrc0l2eSQU">
+          <button id="btn-guard-save" class="ghost" data-page-node-id="7UAU9P9G1eH7IPaW4k5Ejj">保存</button>
+        </div>
+        <div class="row"><label>两次存草稿最少间隔(分钟)</label>
+          <input id="guard-draft-interval" type="number" min="1" max="1440" style="width:90px">
+          <button id="btn-guard-draft-save" class="ghost">保存</button>
+          <span class="muted">（存草稿同样是写操作，也会被平台记录，两个间隔分别保存）</span>
+        </div>
+        <div class="row" data-page-node-id="qdcURlAVChaAKUnIs1nD6h"><span class="muted" id="guard-info" data-page-node-id="PCbEb70Z5XFZ4T2HdKZ464">—</span></div>
+      </div>
+
+      <div class="card" data-page-node-id="zFCC2q7JEujiKdBrjhhFpM">
+        <h2 data-page-node-id="EL0JHG5xLiz3S2RHV4qyJS"><svg class="ico" data-page-node-id="K1qtDrW5KES9v0UuDMXm3v"><use href="#i-send" data-page-node-id="EqNm8qh2h0Iq1TW5yw4Rox"/></svg>发布到小红书 <span class="badge" data-page-node-id="V4ZTjCGxoo7TfpzJPuVOsC">xiaohongshu-auto</span></h2>
+        <div class="row" data-page-node-id="C2aP3TqscOiDfO71FSY2BK"><label data-page-node-id="xlS4D0c3Qz1DzsyAKmpakr">标题</label><input id="p-title" placeholder="笔记标题" data-page-node-id="wzIjcQR4SsxeE95tGHzZbC"><span class="counter" id="p-title-count" data-page-node-id="7pXUhde1EI6NX6Py6RbEMn">0/20</span></div>
+        <div class="row" data-page-node-id="mUUWXGEFocf3iZeO1zLdhW"><label data-page-node-id="30psbHOBy652TI9zoMBBc4">内容分类</label><select id="p-category" data-page-node-id="7CDEpkHo3HxY2g1PVxJ3ID">
+          <option value="policy" data-page-node-id="qmOfi9cWy7vsflq1YKqsz1">政策讲解</option>
+          <option value="subject" data-page-node-id="ZfwQJXnE8bsrIrMFbEHDNI">学科分享</option>
+          <option value="institution" data-page-node-id="UFMObS9irpZkLJZQjHH6gb">机构动态</option>
+          <option value="parents" data-page-node-id="W77DFatm1w3hBVK8RBwfBn">家长干货</option>
+          <option value="other" selected data-page-node-id="aaNrhPAcCz4hnXTtq5TWZJ">其他</option>
+        </select></div>
+        <div class="row" data-page-node-id="SPiC7mmecWUQYmiHDv5FGA"><label data-page-node-id="o2l8l3QSHj2kCtlBACa44G">正文</label><textarea id="p-body" placeholder="笔记正文（可粘贴生成文案）"></textarea><span class="counter" id="p-body-count" data-page-node-id="ECBns2G43a9Cu6aiT2HD8A">0/1000</span></div>
+
+        <!-- 封面 & 素材：从白皮书物料迁入，置于正文下、标签上，UI 顺发布视图 -->
+        <div class="sub-block" data-page-node-id="tY8CQZfosvC6YflLtEz4uh">
+          <h3 class="sub" data-page-node-id="quXHHxvnuBwJKFKDtDAQmk"><svg class="ico" data-page-node-id="bxpcsAMzEs9V4F6URmfwMj"><use href="#i-image" data-page-node-id="GmbToBfvFn5U83VQs9Z6xi"/></svg>封面 & 素材 <span class="badge" data-page-node-id="NgtsvX3pgFjew2zX0FlBc6">模板+上传</span></h3>
+          <div class="grid2 cover-cols" data-page-node-id="kOVKfDQd9Es9nuZHZoRCV8">
+            <div data-page-node-id="KDdLEAcNMKxzIfrzTXcjPc">
+              <h4 class="sub2" data-page-node-id="UflhZYSldKIXlZImcdpZ5Z">① AI 封面</h4>
+              <div class="row" data-page-node-id="xyOsrsHxHmPowHHnfjFGC2"><label data-page-node-id="rCtR61t2kv5rZeK1EY1gtD">封面样式</label><select id="cv-tpl" data-page-node-id="ZztrJsGbwSmF1VEfVSQYWK"><option value="random" data-page-node-id="DFHl6IoNSObsSAvIPpRtWc">随机（每篇不重样）</option></select><span class="muted" data-page-node-id="NtTQsbanZlmalsxP7JTVn1">共 5 套模板，纯本地渲染，不联网</span></div>
+              <div class="row" data-page-node-id="d91SXe0LmBDt0EbB6qtJMz"><label data-page-node-id="kNL8t2UBsrqMzzGZgMo0Rz">主标题</label><input id="cv-title" placeholder="一句话戳中家长，可点下方「从笔记同步」" data-page-node-id="fuLQz5p1D8RYPM3IyKA3dx"></div>
+              <div class="row" data-page-node-id="SOtGQBHJq5KJKBd6jWtypK"><label data-page-node-id="PBTvmj2nymRSK8vZiP0Usu">副标题</label><input id="cv-sub" placeholder="补充说明" data-page-node-id="KvK4gr5rMEO4j532L3sRmU"></div>
+              <div class="row" data-page-node-id="zCkQ5CLFwLm1E9UltrWvov"><label data-page-node-id="rx7tZWsxVtb7dKhQ4pCUG4">标签</label><input id="cv-tag" placeholder="如：教育政策" data-page-node-id="faFxljf5MLdqJlKS1ANsVL"></div>
+              <div class="row"><label>简介</label><input id="cv-intro" placeholder="一句话简介（选填）"></div>
+              <div class="row" data-page-node-id="gE8N4sQiQXwqitT7Rm13yZ">
+                <button class="ghost" id="btn-cv-intro" title="根据笔记标题和正文，AI 生成一句话简介填入上方简介框" style="padding:10px 12px">AI 生成简介</button>
+                <button class="ghost" id="btn-cv-sync" title="把上方笔记标题同步到主标题，并把笔记标签的前 5 个填入下方标签框（标签已有内容时不覆盖）" style="padding:10px 12px">从笔记同步</button>
+                <button id="btn-cover" data-page-node-id="W9g1EjdonD9kIadIET3gLR">生成封面</button>
+              </div>
+              <img class="preview" id="cover-img" style="display:none" data-page-node-id="sXC7234d6347zOvZdcmWAz">
+            </div>
+            <div data-page-node-id="ewVYiZHIQ0SE80xagoDtEc">
+              <h4 class="sub2" data-page-node-id="YmOgMN6Efd0r0jyzof1a6j">② 发布素材上传</h4>
+              <div class="row" data-page-node-id="qTLa7GFu4Xb6ofGX1o1AtT"><input type="file" id="cv-upload" multiple accept="image/*" data-page-node-id="LjOiyn7TVEuQ1j4cqeJIYK"></div>
+              <p class="muted" data-page-node-id="yKgXc53qC2Haot7HCk8puE">支持多张，可排序；勾选「设为封面」将作为发布首图。</p>
+              <ul class="mat-list" id="cv-materials" data-page-node-id="0Au19fiAFEnC2DoI4dGZ1X"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" data-page-node-id="pJXJYMlyQYLR1lCoptabNK"><label data-page-node-id="Et8GtaOA3AophxmC7Ku2uD">标签</label><input id="p-tags" placeholder="逗号分隔，如：教育,北京升学" data-page-node-id="bxVtNJMUi0v5NiRDQC3fqX"><span class="counter" id="p-tags-count" data-page-node-id="Fi4cW7CtNpTrRmIod1O69t">0/10</span></div>
+        <div class="row" data-page-node-id="IK7orWO2kAf7639KjCXca1">
+          <button id="btn-check-pub" data-page-node-id="z3cXjkN8RKMYu1zm4PsaDg"><svg class="ico" data-page-node-id="KAOerjGpUtjetJQExbRkvP"><use href="#i-search" data-page-node-id="DBaC5hexUTVqcQvodLkVmN"/></svg>合规自检</button>
+          <span class="muted" data-page-node-id="bb9stWgJEUWkIFgOH96R8s">发布前必查：超字数 / 违禁词会被拦截</span>
+        </div>
+        <div id="pub-check" class="check-box" style="display:none" data-page-node-id="MpTAMHHRgV23GgnFVIbzpi"></div>
+        <div class="row" data-page-node-id="3pGpc4eBskIZACFl0UnuWc">
+          <button id="btn-download-pkg" class="cta" style="padding:8px 16px;cursor:pointer;font-size:14px" data-page-node-id="jPe57DcJcewHzJtDDcyBI6"><svg class="ico" data-page-node-id="HDSCssGnjsl3MX1YGvngFt"><use href="#i-download" data-page-node-id="FHn6uQAk8jZkTmCdvvt3Ps"/></svg>一键下载（手动发）</button>
+          <button id="btn-publish-draft" class="btn-xhs" title="内容将写入小红书创作平台的草稿箱（需先登录发布专用浏览器）。注意：写进去后在本平台无法再取回编辑；草稿只存在电脑端，不会同步到手机等其他设备的草稿箱（小红书官方机制）" data-page-node-id="Pv5xNDQBwbbpPUjGs1g543"><svg class="ico" data-page-node-id="3aygX2XRGHEhEWKguuK2ZP"><use href="#i-clipboard" data-page-node-id="IzuEoGA8ADlYSxy2xgVoVL"/></svg>推送到小红书草稿</button>
+          <button id="btn-publish-now" class="btn-xhs-danger" style="background:#dc2626" title="最易触发风控封禁，默认不推荐，仅在账号已养成熟号时谨慎使用" data-page-node-id="ZHkuYKMfSbfBjsNDWImHUA"><svg class="ico" data-page-node-id="nASNIm0AXELPxb9KhN553O"><use href="#i-send" data-page-node-id="QYhqgs10AhD5AaW2nclf0N"/></svg>直接发布（高风险）</button>
+        </div>
+        <div class="pub-warn" style="margin-top:10px;padding:10px 14px;background:#fef3c7;border:1px solid #f59e0b;border-radius:10px;font-size:12px;color:#92400e;line-height:1.6" data-page-node-id="UD4Nuui5h0kuBzTBLAdhhm">
+          <svg class="ico warn" style="vertical-align:-0.15em" data-page-node-id="iihju39Q0P9yjj2Vrr8BzG"><use href="#i-warning" data-page-node-id="ct32MX9OLoeXTxzOwMEAPg"/></svg> 自动发布仍存在被小红书风控识别的风险。我们已做降风险处理：优先复用你<strong data-page-node-id="LdTIymAXo7vw8dDvIOBtme">本机真实浏览器</strong>的环境指纹、加入<strong data-page-node-id="2Ho84N6ymi4W8uo6EmlTGe">拟人化操作节奏</strong>、并强制<strong data-page-node-id="lcZjCHWfARx9GqgCIJbRmn">发布频率护栏</strong>。但最稳妥仍是<strong data-page-node-id="ZejMXC6xZIjvGQJHhNlcWN">「一键下载（手动发）」</strong>。
+        </div>
+        <p class="muted" style="margin-top:8px;font-size:12px;line-height:1.6">草稿说明：推送到「小红书草稿箱」后，发布专用浏览器<strong>不会自动关闭、没有倒计时</strong>，你可以随时在那个浏览器里检查内容、自己点发布，或用工作台的「关闭浏览器」按钮收尾。另外，草稿箱内容<strong>只保存在电脑端的创作平台，不会同步到手机等其他设备的草稿箱</strong>——这是小红书官方机制，没办法绕过，最终发布请在电脑端完成。</p>
+        <div class="result" id="publish-result" data-page-node-id="FIRkcJ2FjMzcyDBH6N6yKu">发布任务将显示在这里…</div>
+      </div>
+    </section>
+
+    <!-- 视图：物料生成 -->
+    <section class="view" id="view-material" data-page-node-id="VbJBhrWcxG75gx3Jj4i9pF">
+      <div class="card" data-page-node-id="wuRVfKakHEwhSV8fLqRpMT">
+        <h2 data-page-node-id="jqMQqr8Xx2QMyZ2kuhY6Ha"><svg class="ico" data-page-node-id="gfXLUrofPCdO0CGMqc2huW"><use href="#i-doc" data-page-node-id="o1uB1zUCaCkCxUeAS1Yh3A"/></svg>白皮书物料生成 <span class="badge" data-page-node-id="IIRbRC88co3yXyPOeBeKMf">聚合平台+知识库</span></h2>
+        <p class="muted" data-page-node-id="LMuh9ckaGwRyOu5LCb4muv">输入政策 / 学情白皮书主题，自动综合「信息聚合平台」资讯与「知识库」内容，产出一份格式清晰、内容丰富的文档。</p>
+        <div class="row" data-page-node-id="R3rJhO6GU94XEFHywCZgKx">
+          <label data-page-node-id="eEtbdctPdNBBUaJZIslZJH">主题</label>
+          <input id="m-theme" placeholder="如：2026 北京中考改革、K12 学情白皮书" data-page-node-id="SHWUyFQNOmD5eGfeNDcKBF">
+        </div>
+        <div class="row" data-page-node-id="vTjFFFfsX6enN8yt2TnHrY">
+          <label data-page-node-id="RO6kFXWrRed28oszpyvYpK">类型</label>
+          <select id="m-type" data-page-node-id="857veorkylAvdYchXGV4ek">
+            <option data-page-node-id="6VxOBdbB6yqxJtjhBcLRaz">政策解读物料</option>
+            <option data-page-node-id="5G5Dei02japjZfD8HJ8c2D">学情白皮书</option>
+            <option data-page-node-id="EAwsdE5RAZKF4FKjJfgUiC">综合宣传物料</option>
+          </select>
+          <label data-page-node-id="IbaTjK4UicOP08YpQueay1">业务线</label>
+          <select id="m-business" data-page-node-id="3F8v7QO6tVF2O7RlwOKejM">
+            <option data-page-node-id="2yIQQ9SjIBgUeD5nUzPX3C">素养智学/小学</option>
+            <option data-page-node-id="PoMUHoz6WZAzGYHgH7GtZG">智慧学习/初中</option>
+            <option data-page-node-id="LyCgUnzJUC2HKqENxqOuWU">高中一对一</option>
+            <option data-page-node-id="UuDwA5SSjE2AvhlR3pKf4F">高中班课</option>
+          </select>
+          <button id="btn-material" data-page-node-id="wW5umbPJSWmy5F6FQ9eD3D">生成物料</button>
+          <button class="ghost" id="btn-edit-material" data-page-node-id="9n2XbD7jMgk9UZRdxgCW74">编辑提示词</button>
+        </div>
+        <textarea id="material-prompt" style="display:none; min-height:120px"></textarea>
+
+        <div class="result" id="material-result" data-page-node-id="GWwVkkFIyiNZdDBiJ9QAmH">生成的文档将显示在这里（可复制、可下载 .md / .docx / .pdf）</div>
+        <div class="row" id="material-actions" style="display:none; margin-top:10px" data-page-node-id="8OaDvOVkxTcXSyZxrniVrE">
+          <button class="ghost" id="btn-copy-material" data-page-node-id="M6qPbKgWnVFfrcQ7jzTzzv"><svg class="ico" data-page-node-id="jXEvP8hEdVqohcMJ97qX5V"><use href="#i-clipboard" data-page-node-id="upMCDPqoSAbLuDAJWyEn7E"/></svg>复制</button>
+          <button class="ghost" id="btn-dl-material" data-page-node-id="6tSbEZmDuyOt31FD2kzwqo"><svg class="ico" data-page-node-id="apRf7akdZLQkkW3ILfv3T1"><use href="#i-download" data-page-node-id="DXEtnWPCxBkSokEA8emEjW"/></svg>下载 .md</button>
+          <button class="ghost" id="btn-dl-docx" data-page-node-id="XH536EIasAaT8guoHwskps"><svg class="ico" data-page-node-id="RcCn9y2RAxGHmF2F0iyWAc"><use href="#i-doc" data-page-node-id="KZrJamKZ13UXnyfwvcWWKR"/></svg>下载 .docx</button>
+          <button class="ghost" id="btn-dl-pdf" data-page-node-id="kbY2mtCsB8wbRrHHO7kGAT"><svg class="ico" data-page-node-id="EfIiO9WMFuUHMaLPWHTq7S"><use href="#i-download" data-page-node-id="qsfeEUcDLMeK6d8E2bKhyM"/></svg>下载 .pdf</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="view-history" data-page-node-id="Qzv9DWhlsXF8aaK1mX22EB">
+      <div class="card" data-page-node-id="BOfXQb9GHvTxWXzR6MVvVY">
+        <h2 data-page-node-id="i9QugK24itkXdMeLnHGSo4"><svg class="ico" data-page-node-id="PFIyBbpg5GB0YYdWtGXcyT"><use href="#i-history" data-page-node-id="TpgemNIvfEljnogigMRB1t"/></svg>发布历史 <span class="badge" data-page-node-id="lxA7fuTT4T1m09xlI776G8">本地记录</span></h2>
+        <p class="muted" data-page-node-id="v3XNQGZUE1BCTlbvW3Uueb">这里列出每一次「存入草稿箱 / 直接发布」的记录（标题、分类、模式、时间、真实状态），来自本地任务单文件。可在日历里 hover 查看当日选题。</p>
+        <div class="row" data-page-node-id="AHqLrvY4hzdpu0PKwXQwEq">
+          <button id="btn-refresh-history" data-page-node-id="EiVAlcwOkF9154SHdXPgmn"><svg class="ico" data-page-node-id="przTvHGFuhPZqfhOEzEW0k"><use href="#i-refresh" data-page-node-id="XHkA2DBxyA024fGVyHXyxw"/></svg>刷新记录</button>
+          <span class="muted" data-page-node-id="J6f5QpAKY2ppphbCkYUz4B">记录保存在服务器 output/ 目录，刷新页面不丢失</span>
+        </div>
+        <div id="history-result" class="result" data-page-node-id="Kw1ge7V56K0781StvdhfIG">加载中…</div>
+      </div>
+    </section>
+
+    <!-- 视图：违禁词清单编辑 -->
+    <section class="view" id="view-banned" data-page-node-id="Xp6XfP0oR5q9FdRm1hTPKg">
+      <div class="card" data-page-node-id="x5sfbPpyQfCG6NdNL40Mxq">
+        <h2 data-page-node-id="nfaFBLc0KqUVCTfk8jfxNi"><svg class="ico" data-page-node-id="J0fpCbFnerF0nGFb74E5b7"><use href="#i-ban" data-page-node-id="hB7MtVftyvniye82rFC4Fz"/></svg>违禁词清单 <span class="badge" data-page-node-id="nd4H17T1rvZqQ54VKjnKIN">合规·可编辑</span></h2>
+        <p class="muted" data-page-node-id="wUhPQelvSIFtKwEGiHFKWT">命中的词会在「合规检查」里被标红提醒（教培行业高危，易触发限流/删帖/封号）。增删后立即生效，并自动保存到本地。</p>
+        <div class="row" style="align-items:flex-end" data-page-node-id="5WUlcfaN8PptN83uPSxCtX">
+          <div style="flex:1" data-page-node-id="m1oMEr0IaEoKl8o6Sgg7mY">
+            <label data-page-node-id="wArfzcBhF4AutWBxmQQKB7">添加违禁词</label>
+            <input id="bw-input" placeholder="输入一个词，回车或点添加" style="width:100%" data-page-node-id="CxrGdNshPQoDorH2dwHEUZ">
+          </div>
+          <button id="btn-bw-add" data-page-node-id="VsSJSiwyTtuLAxws1D9oIg"><svg class="ico" data-page-node-id="RnzT4u6ddv7hheQXg3NL1o"><use href="#i-plus" data-page-node-id="4H3QMTu5lB4KbXfvuwMoQI"/></svg>添加</button>
+        </div>
+        <div class="row" style="margin-top:8px" data-page-node-id="EAtoP1U2UYEvfnM1TGh3vh">
+          <span class="muted" id="bw-count" data-page-node-id="Jxg4cGaguUxAL63BXBO7qx">共 0 个</span>
+          <span style="flex:1" data-page-node-id="CiniM6wLb1yHqblbty4D6N"></span>
+          <button class="ghost" id="btn-bw-reset" style="font-size:12px;padding:4px 12px" data-page-node-id="AHdKgj732pJ47ffe6W6n2O"><svg class="ico" data-page-node-id="SnoZl6hPWuqRr0YdhUFCIK"><use href="#i-refresh" data-page-node-id="Q6r872xeG39dOUpLaaqhpZ"/></svg>重置为默认</button>
+          <button id="btn-bw-save" style="font-size:12px;padding:4px 14px" data-page-node-id="q8Ak3C6QMd02OCkIDDSpwV"><svg class="ico" data-page-node-id="0TL8nzuk0CCc0nF79IhFgX"><use href="#i-save" data-page-node-id="KlAjJG2uFylrD7qoXMsUhd"/></svg>保存</button>
+        </div>
+        <div id="bw-list" class="bw-list" data-page-node-id="YWgGvN4DQd7H8K8u7Fbmhq"></div>
+      </div>
+
+      <!-- 离线扩展词库（合规检查第二通道，只读预览） -->
+      <div class="card" id="ext-dict-box" style="margin-top:16px">
+        <h2 style="display:flex;align-items:center;gap:10px">
+          <svg class="ico"><use href="#i-shield"/></svg>离线扩展词库
+          <span class="badge" style="background:#e7f5ff;color:#1971c2">营销合规 · 只读预览</span>
+        </h2>
+        <p class="muted">这是「合规检查」的<b>第二个词库通道</b>（已随代码分发，自动参与检测，无需手动启用），收录 543 个平台营销合规词并支持跳字识别（如「加 微 信」「最.好.的」）。词条改动请在项目 <code>dict/platform_marketing_words.json</code> 中完成，重启后生效。点击分类可展开查看词条。</p>
+        <div style="margin:10px 0;font-size:13px">
+          <span id="ext-count" class="stat" style="font-weight:600">加载中…</span>
+          <span style="flex:1"></span>
+          <span id="ext-level-sum" class="muted" style="margin-left:12px"></span>
+        </div>
+        <div id="ext-list" class="ext-list"></div>
+      </div>
+    </section>
+
+    <!-- 视图：违规日志 -->
+    <section class="view" id="view-violation" data-page-node-id="prDPPkVkw9ZEWrn8SJDKpP">
+      <div class="card" data-page-node-id="y56IZztrtgUZoErYEWPCfD">
+        <h2 data-page-node-id="f5AdCEwkJZFMzfwkzQN1tS"><svg class="ico" data-page-node-id="adaayM83Uq4dZGj6tA1dJ3"><use href="#i-chart" data-page-node-id="BWi1kNncCSCRDXIC982go6"/></svg>违规日志 <span class="badge" data-page-node-id="p6V148kzINsDOSC4m2G0DV">风控分析</span></h2>
+        <p class="muted" data-page-node-id="RurkK9sTa462rdYRtC8qml">发布没成功（脚本报错、或结果无法确认）时，<b>服务端会自动记一条</b>（标「自动」，刷新页面、关掉浏览器都留得住）；小红书后台收到的警告 / 限流 / 封禁，用下方表单手动补记（标「手动」）。</p>
+
+        <!-- 手动记录表单 -->
+        <div class="vl-form" style="background:#fef3c7;border:1px solid #f59e0b;border-radius:12px;padding:14px;margin-bottom:16px" data-page-node-id="iad8K4zquv9ZbN4eymjn8b">
+          <h4 style="margin:0 0 10px;font-size:14px;color:#92400e" data-page-node-id="EITIZzZcAQpgBqPPUScwL0"><svg class="ico" style="vertical-align:-0.15em" data-page-node-id="Xa11sFov0pJ0nYGBqMqkGB"><use href="#i-edit" data-page-node-id="Agovbo157LZoCSefyng2et"/></svg>记录一次违规事件</h4>
+          <div class="row" style="margin-bottom:8px" data-page-node-id="jGycLyDMXnJ2voy95qd0pA">
+            <label style="min-width:70px;font-size:13px" data-page-node-id="tI5ewOFSq8Fb8Liunk0Ej1">事件类型</label>
+            <select id="vl-type" style="flex:1;padding:6px 10px;border-radius:8px;border:1px solid #fcd34d" data-page-node-id="qHqBKmGrD3rVsy7GAcCFtT">
+              <option value="warning" data-page-node-id="Fo1aMAoG7CR9NDhBi4tcMI">警告（提醒/通知）</option>
+              <option value="limit" data-page-node-id="dx7M25Cqh3ad6AvMxvRtt1">限流（减少曝光/无法发帖）</option>
+              <option value="ban" data-page-node-id="uFgvaJ5GOQJOuw2q8xmLvv">封禁（禁言/封号）</option>
+              <option value="other" data-page-node-id="78BOcRSCWeEfKIMermVI1b">其他</option>
+            </select>
+          </div>
+          <div class="row" style="margin-bottom:8px" data-page-node-id="cmnM4AdmDMFrynd26rq90t">
+            <label style="min-width:70px;font-size:13px" data-page-node-id="Fj6LvlpAaETTubwIEJYlHs">可能原因</label>
+            <select id="vl-trigger" style="flex:1;padding:6px 10px;border-radius:8px;border:1px solid #fcd34d" data-page-node-id="MEPU0xncAmadBQJw2MHmYj">
+              <option value="" data-page-node-id="Z40qWnXb4RZdDzYXa7iLIV">-- 选择或手动填写 --</option>
+            </select>
+          </div>
+          <div class="row" style="margin-bottom:8px" data-page-node-id="lQ9hMPABZcCsgsy81ov2Gv">
+            <label style="min-width:70px;font-size:13px" data-page-node-id="EdXVoqUdeuDYDcw3WidMNX">详情描述</label>
+            <input id="vl-detail" placeholder="如：连续发了3条关于中考的笔记后收到警告" style="flex:1;padding:6px 10px;border-radius:8px;border:1px solid #fcd34d" data-page-node-id="hrb04AuFoTOOKH84ZhlSHw">
+          </div>
+          <div class="row" style="margin-bottom:8px" data-page-node-id="Lw5pyHsrri2nMMWprua6OK">
+            <label style="min-width:70px;font-size:13px" data-page-node-id="81AlVxCRtvabRijFjonftY">后续处理</label>
+            <input id="vl-action" placeholder="如：停发2天，改用手动发布" style="flex:1;padding:6px 10px;border-radius:8px;border:1px solid #fcd34d" data-page-node-id="XcCKrTcosk853gSBnt7fjA">
+          </div>
+          <button id="btn-vl-add" style="background:#dc2626;color:#fff;border:none;padding:7px 18px;border-radius:10px;cursor:pointer;font-size:13px" data-page-node-id="eLKa7K8aWaJbE4oYLmYyeK"><svg class="ico" data-page-node-id="fvARoeiTg81vsSCW6KcL2p"><use href="#i-plus" data-page-node-id="ok5hByK36xpt30kSn0WDdH"/></svg>记录此事件</button>
+        </div>
+
+        <!-- 统计概览 -->
+        <div id="vl-stats" class="vl-stats" style="display:none" data-page-node-id="Q0Dd5GrV1lV1ybLz6gwYdP"></div>
+
+        <!-- 日志列表 -->
+        <ul class="draft-list" id="vl-list" data-page-node-id="lmR4T1K1qZ9YWqNaeGGhT8"></ul>
+        <p class="muted" id="vl-empty" style="margin-top:6px" data-page-node-id="XLYn1eUXT623kHvEpmAXY4">暂无违规记录。如果收到小红书警告/限流，请用上方表单记录。</p>
+      </div>
+    </section>
+
+
+    <!-- 视图：系统配置 -->
+    <section class="view" id="view-config" data-page-node-id="fWwjEf3urUnSOwP2snlpFG">
+      <div class="card" data-page-node-id="YOPxhn9EzjAX73CnMOifW5">
+        <h2 data-page-node-id="u6qHXttps65yQhuMhrAH81"><svg class="ico" data-page-node-id="JrZX17o3oL1dp3iqpfhuHU"><use href="#i-gear" data-page-node-id="9VI1T4u9lRgE3nzSFV1sec"/></svg>系统配置 <span class="badge" data-page-node-id="InFKVswLiB6cl67UaJ6QAG">API 钥匙</span></h2>
+        <p class="muted" data-page-node-id="uC5ac17Cr7UYJV0ffCn88K">配置大模型 API 后，选题 / 文案 / 物料生成即可使用。所有配置保存在本地 config.json。</p>
+
+        <div class="cfg-box" data-page-node-id="bvV4YzebhIIHbCHGtJPsrw">
+          <h3>大模型 API</h3>
+          <div class="row" data-page-node-id="Lt8FoahBRadPfSrHBvFaWL"><label data-page-node-id="G18bFYser78tmTFZo5U8E8">API Key</label>
+            <input id="cfg-llm-key" type="password" placeholder="sk-... 留空表示不修改" autocomplete="off" style="flex:1" data-page-node-id="JBpFotq4SDlOsNID1FopPu">
+            <button class="ghost" id="cfg-key-toggle" type="button" data-page-node-id="XAwuyPprXavED3yMKoUcGY">显示</button>
+          </div>
+          <div class="row" data-page-node-id="PnJefzlxnhE79z7UHhm6Gh"><label data-page-node-id="FRCjZZV0vmpy6QnOHea6d2">Base URL</label>
+            <input id="cfg-llm-base" placeholder="https://api.deepseek.com" style="flex:1" data-page-node-id="irQwE9GhLkjV9nPAegYnxO">
+          </div>
+          <div class="row" data-page-node-id="pkqKoEgCYWcE0DqhAhZIgs"><label data-page-node-id="r7EK8ja72zDdXp3lyGXKgW">Model</label>
+            <input id="cfg-llm-model" placeholder="deepseek-chat" style="flex:1" data-page-node-id="zD6t16NrZzLLFZU9R7dUad">
+          </div>
+        </div>
+
+        <div class="cfg-box" data-page-node-id="QOtfkosP9dqSjyuMnNzWmi">
+          <h3>聚合平台</h3>
+          <div class="row" data-page-node-id="6HmSew5THnSZkvOwYlkwso"><label data-page-node-id="M0Ogbqbe3976jM2B9cgz6B">Base URL</label>
+            <input id="cfg-platform-url" placeholder="http://localhost:3001" style="flex:1" data-page-node-id="3YVaGNdxuPlNEM1MmzNcQT">
+          </div>
+        </div>
+
+        <div class="cfg-box" data-page-node-id="HGm4WCnLS45sAfS6ooYSYp">
+          <h3>发布设置</h3>
+          <div class="row" data-page-node-id="Jqt5HvL96RgduSnyuVTzk2"><label data-page-node-id="szvMmWGdBSwbbGhThtOfxE">最小发布间隔(分)</label>
+            <input id="cfg-pub-interval" type="number" min="1" value="60" style="width:120px" data-page-node-id="phADrRUV7cojAxUikD7FQD">
+          </div>
+          <div class="row"><label>最小存草稿间隔(分)</label>
+            <input id="cfg-pub-draft-interval" type="number" min="1" value="15" style="width:120px">
+          </div>
+          <div class="row" data-page-node-id="wQOuzBFVSdISSowcB6rqH1"><label data-page-node-id="3wJ5IuJCNx0mESirbeI4GQ">Humanize 强度</label>
+            <select id="cfg-pub-humanize" style="width:160px" data-page-node-id="IXxVU0fb8783N6VGZyDQvA">
+              <option value="off" data-page-node-id="cq1PCE0BWvmeXFB8u3mdc8">关闭</option>
+              <option value="light" data-page-node-id="myaKADUS9XMrp05Iz94VBU">轻</option>
+              <option value="normal" data-page-node-id="DMdXugjKC84bPEzrGgwpNu">中</option>
+              <option value="strong" data-page-node-id="WeUFmEUa9uIDWILH6SWCiD">强</option>
+            </select>
+          </div>
+          <div class="row" data-page-node-id="ZbWzpD8AH3ljLLeDPwiqMF"><label data-page-node-id="yhs3YMZXaNyQ7fGsLrsksV">CDP 端口</label>
+            <input id="cfg-pub-cdp" type="number" value="9222" style="width:120px" data-page-node-id="72mAJ8SH3Xf1kLGwBEiypZ">
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:16px" data-page-node-id="uNyEbiZeQYlhDwOk4ZZU1F">
+          <button id="btn-cfg-save" class="cta" style="padding:8px 18px" data-page-node-id="6X20zAVBVe4mbyKYLOF4Sd">保存配置</button>
+          <button id="btn-cfg-test" class="ghost" data-page-node-id="8p1VhG5pVF45IhlRmuDPh5">测试大模型连接</button>
+          <button id="btn-cfg-reset" class="ghost" data-page-node-id="6rSOeQwUXK7ithRTlDqGh5">重置默认</button>
+          <span id="cfg-msg" class="muted" data-page-node-id="oOxLiWGED0hoF761qRncKB"></span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- 顶部 toast 对话框 -->
+<div id="toast" class="toast" onclick="onToastClick()" role="status" aria-live="polite" data-page-node-id="in7FOudouORvsGItE42RJQ">
+  <span id="toast-msg" data-page-node-id="HjNwb6NvK43Fo4EylEg7ci"></span>
+  <span class="toast-x" title="关闭" aria-label="关闭" data-page-node-id="0mUuHtgNbBHvQxVsdSckGp">×</span>
+</div>
+
+<!-- 发布确认弹窗 -->
+<div id="confirm-mask" class="modal-mask" data-page-node-id="jB1CKRcAyHTHFB4zrJOQDe">
+  <div class="modal modal-danger" data-page-node-id="uZUsljg1fgqPlLdoe4HymM">
+    <h3 data-page-node-id="zosfxdk8Zpi4CjIHDpWBVy"><svg class="ico warn" style="vertical-align:-0.15em" data-page-node-id="RvJrHoLwBpwULFnkp04nA3"><use href="#i-warning" data-page-node-id="SUemoEPEPbEu4FrUVwByDv"/></svg> 高危操作：确认自动发布？</h3>
+    <p data-page-node-id="mfa2CnS5zhANjKPL22l3Ex"><b data-page-node-id="Mey1mClUcOQmA776NLSb7a">你正在触发「自动发布」。</b>小红书已对「AI 托管发文/互动」专项风控，账号多次被识别将被限流甚至封禁（你刚经历过 7 天封禁）。<br data-page-node-id="Hix8M2bNthMKO8OAWQOnD0"><br data-page-node-id="c4burRz8ST6SXJBTe1eKcx">更稳妥的做法：用上方「<b data-page-node-id="NGWCFQKIMrd5kQuDeQpZ2X">一键下载（手动发）</b>」把内容打包，再人工粘贴发布 —— 既保留 AI 提速，又避开自动发布风险。<br data-page-node-id="XwNNfmfIQVJQjUNj3dGM8h"><br data-page-node-id="bF4dwF2L1zsLZvEnZuScBO">如仍要本次自动发布，请确认当前账号已养成熟号、且你自愿承担封号风险。</p>
+    <div class="modal-actions" data-page-node-id="YZeUIE5UxRtURuE7ZUV354">
+      <button class="ghost" onclick="closeConfirm(false)" data-page-node-id="Z1rSXcvuayIUnZNH6JU2st">取消（推荐）</button>
+      <button id="confirm-ok" class="btn-danger-solid" onclick="closeConfirm(true)" data-page-node-id="aQYifXW4Es4kctAhkQ4aJd">仍要自动发布</button>
+    </div>
+  </div>
+</div>
+
+<!-- 通用提示弹窗（同步成功等） -->
+<div id="info-mask" class="modal-mask" data-page-node-id="TRntEMELPEiGupomvGYRek">
+  <div class="modal" data-page-node-id="P8XpBuSU81QLoEe8KxLjtA">
+    <h3 id="info-title" data-page-node-id="rBgKUHmZqtbruclUVPOkMd">提示</h3>
+    <p id="info-msg" data-page-node-id="CqGQzLbJdPeQhs7I3Rszre"></p>
+    <div class="modal-actions" data-page-node-id="VDUtfjhIKpyu0IoQ0x12d8">
+      <button onclick="closeInfo()" data-page-node-id="NnQwzXTroiPTnhlsZP9D99">知道了</button>
+    </div>
+  </div>
+</div>
+
+<!-- 通用二选一弹窗（标题/正文/两个按钮文案都由 JS 传入） -->
+<div id="ask-mask" class="modal-mask" data-page-node-id="askMaskRoot">
+  <div class="modal" data-page-node-id="askMaskBox">
+    <h3 id="ask-title"></h3>
+    <p id="ask-msg"></p>
+    <div class="modal-actions">
+      <button id="ask-cancel" class="ghost" onclick="closeAsk(false)"></button>
+      <button id="ask-ok" onclick="closeAsk(true)"></button>
+    </div>
+  </div>
+</div>
+
+<!-- 进平台配置提醒弹窗 -->
+<div id="config-remind-mask" class="modal-mask" data-page-node-id="lIDJTUJYEKnXgs5dOVsnNu">
+  <div class="modal" data-page-node-id="Fm1Zu3RzDAOj0F0DTgGlmz">
+    <h3 data-page-node-id="XaU6F5puAaC21JmsDn9F6i"><svg class="ico" style="vertical-align:-0.15em" data-page-node-id="3AxxWyA1YRR6b9m4HRALpe"><use href="#i-gear" data-page-node-id="4tnzgvjkzLjI3nUkwhpACh"/></svg> 尚未配置大模型 API</h3>
+    <p data-page-node-id="DVpqLw578UzwfawFwZv164">检测到当前未配置大模型 API Key。<b data-page-node-id="5NIhtpPu5YIWmthPA2HCgr">选题 / 文案 / 物料生成</b>功能将无法正常使用。<br data-page-node-id="WNC5M5Wep4mwKkB28yu12P"><br data-page-node-id="hHNinl6VD3twhWGHGbHbMD">建议立即配置：点「前往配置」，填入你的 DeepSeek / OpenAI Key 即可。</p>
+    <div class="modal-actions" data-page-node-id="T56qE0rvQxc6a99QCFKWrw">
+      <button class="ghost" onclick="closeConfigRemind()" data-page-node-id="TA3JBC4Vw8jLtPd2MTctnu">稍后（本次不再提醒）</button>
+      <button id="config-remind-go" onclick="goConfigFromRemind()" data-page-node-id="zn1Q0LvGCmXS9iBpAOBoET">前往配置</button>
+    </div>
+  </div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>

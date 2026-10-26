@@ -1,0 +1,47 @@
+# 依赖
+node_modules/
+
+# 密钥与本机配置 —— 绝不入库
+# 聚合平台的 DeepSeek Key 在 edu-info-platform/server/.env
+# 工作台的 Key / 发布设置在 edu-media-workbench/config.json
+.env
+.env.*
+!.env.example
+config.json
+
+# 构建产物
+dist/
+*.tsbuildinfo
+.vite/
+
+# 日志与 Office 临时文件
+*.log
+.DS_Store
+Thumbs.db
+~$*
+
+# 运行期产物（封面临时文件、发布任务记录、风控状态）
+# 注意：模式里含 "/" 时只匹配 .gitignore 所在层级，所以这里统一用 **/ 前缀，
+# 否则规则落不到 edu-media-workbench/output/ 里。
+**/output/cover_tmp_*.html
+**/output/cover_*.png
+**/output/封面模板*.png
+**/output/publish-task_*.json*
+**/output/*-task.json
+**/output/test-draft-task.json
+**/output/publish-guard.json
+**/output/.current-publish.json
+**/output/covers-preview.html
+**/output/violation_log.json
+**/output/uploads/
+**/output/knowledge/
+**/publish/
+
+# 发布流程调试截图（含小红书后台界面，属个人隐私，不入库）
+publish-screenshots/
+
+# 数据备份（清理乱码数据时产生的临时副本）
+articles.json.bak-*
+
+# 本机会话目录
+.workbuddy/

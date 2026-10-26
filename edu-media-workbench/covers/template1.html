@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1080px; height:1350px; }
+  .cover {
+    width:1080px; height:1350px;
+    background:#F7F5F0; color:#1A1A1A;
+    font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;
+    display:flex; flex-direction:column; padding:110px 96px 80px;
+    position:relative; overflow:hidden;
+  }
+  .grain{
+    position:absolute; inset:0; opacity:.5; mix-blend-mode:multiply; pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+  }
+  .tag{
+    align-self:flex-start; position:relative; z-index:2;
+    color:#FF7A00; font-size:26px; font-weight:600; letter-spacing:.28em;
+    padding-bottom:14px; border-bottom:2px solid #FF7A00;
+  }
+  .mid{ margin-top:72px; position:relative; z-index:2; text-align:left; }
+  .title{
+    font-size:96px; line-height:1.16; font-weight:700; letter-spacing:.01em;
+    color:#111111; max-width:880px;
+  }
+  .rule{ width:64px; height:4px; background:#FF7A00; margin:40px 0 36px; }
+  .subtitle{ font-size:38px; line-height:1.6; font-weight:400; color:#5F5E5A; max-width:820px; }
+  .intro{ margin-top:30px; font-size:32px; line-height:1.7; font-weight:400; color:#5F5E5A; max-width:820px; padding-left:26px; border-left:4px solid #FF7A00; }
+  .foot{
+    margin-top:auto; position:relative; z-index:2;
+    padding-top:30px; border-top:1px solid #D3D1C7;
+    display:flex; justify-content:space-between; align-items:center;
+    font-size:26px; color:#6B6B66;
+  }
+  .brand{ font-weight:600; color:#111111; letter-spacing:.02em; }
+</style>
+</head>
+<body>
+  <div class="cover">
+    <div class="grain"></div>
+    <div><span class="tag">{{tag}}</span></div>
+    <div class="mid">
+      <div class="title">{{title}}</div>
+      <div class="rule"></div>
+      <div class="subtitle">{{subtitle}}</div>
+      <div class="intro">{{intro}}</div>
+    </div>
+    <div class="foot">
+      <span class="brand">新东方 · 教培新媒体</span>
+      <span>家长都在看</span>
+    </div>
+  </div>
+</body>
+</html>

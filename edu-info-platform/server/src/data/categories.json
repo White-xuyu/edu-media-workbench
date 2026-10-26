@@ -1,0 +1,51 @@
+[
+  {
+    "id": "cat-1",
+    "name": "政策法规",
+    "icon": "ScrollText",
+    "type": "system",
+    "order": 1
+  },
+  {
+    "id": "cat-2",
+    "name": "学科资讯",
+    "icon": "BookOpen",
+    "type": "system",
+    "order": 2
+  },
+  {
+    "id": "cat-3",
+    "name": "考试招生",
+    "icon": "FileText",
+    "type": "system",
+    "order": 3
+  },
+  {
+    "id": "cat-5",
+    "name": "教育科技",
+    "icon": "Cpu",
+    "type": "system",
+    "order": 5
+  },
+  {
+    "id": "cat-6",
+    "name": "学前教育",
+    "icon": "Baby",
+    "type": "system",
+    "order": 6
+  },
+  {
+    "id": "cat-7",
+    "name": "基础教育",
+    "icon": "School",
+    "type": "system",
+    "order": 7
+  },
+  {
+    "id": "cat-8",
+    "name": "高等教育",
+    "icon": "GraduationCap",
+    "type": "system",
+    "order": 8
+  }
+]

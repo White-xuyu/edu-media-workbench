@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+Thumbs.db
+
+# 构建缓存
+*.tsbuildinfo
+.vite/
+
+# 会话工作目录（内部记录）
+.workbuddy/
+
+# 私有运行时数据（服务首次启动会自动生成空文件，无需提交）
+server/src/data/users.json
+server/src/data/chats.json
+server/src/data/settings.json
+server/src/data/collections.json

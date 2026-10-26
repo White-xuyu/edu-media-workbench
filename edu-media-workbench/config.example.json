@@ -1,0 +1,31 @@
+{
+  "server": {
+    "port": 4000
+  },
+  "llm": {
+    "source": "direct",
+    "apiKey": "在这里填你的大模型 API Key（DeepSeek / OpenAI 兼容）",
+    "baseUrl": "https://api.deepseek.com",
+    "model": "deepseek-chat",
+    "platformToken": "",
+    "fallbackEnvPath": ""
+  },
+  "platform": {
+    "baseUrl": "http://localhost:3001",
+    "envPath": ""
+  },
+  "publish": {
+    "minIntervalMinutes": 60,
+    "minDraftIntervalMinutes": 15,
+    "cdpPort": 9222,
+    "cdpBrowserPath": "",
+    "cdpProfileDir": "",
+    "humanize": {
+      "enabled": true,
+      "intensity": "normal"
+    },
+    "scriptPath": "./xhs-publish.js",
+    "sessionDir": "",
+    "accountName": ""
+  }
+}

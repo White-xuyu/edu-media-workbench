@@ -1,0 +1,16 @@
+{
+  "name": "edu-info-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "教育培训行业教育资讯官方网站集成平台",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
